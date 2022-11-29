@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>battery-status-full</title>
+	<defs>
+		<image  width="512" height="270" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAEOAQMAAADFVD1UAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAidzrUdYoIwAAAAJ0Uk5TAP9bkSK1AAABT0lEQVR4nO3csQ3CMBCF4SAKSkZgFI9mj+ZRMgJlCsSBZUzc5p6lJNJ//X1S7Eua6N00fetim+s59RW3A5a7/quj35YOeHgAE5+gfwbHEZZaj/HmAxbxCOz9B4IPsKSdYXeKzn6blTEq1a7BeQnrNdy9wEu7xfUegxcwGUjaGPwHwd3/A5zvYqlZBZ7aIA4AFm2SG+Ce5DbLAvDWXoUBgI0Bwp5AGgLEUwNZ+54ADAFmAAAAAAAAAAAAgEMCpQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAttb+f7oAAAAAAAAAAAAAjglkgArEPYE0BAinBkr/AVJlAlCDcXI0Tw4HCvHECsgBSTmiKYdE5Ziq8EXJFYgqENxAUoHarwem5ci2HBqXY+vuQZgbEJ1AbkBwAqkBD1//ur5AXqAgr3CQl0joayzkRRryKg9pmcgHtldEA4qSaOcAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="121"/>
+</svg>
