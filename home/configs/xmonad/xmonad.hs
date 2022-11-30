@@ -189,7 +189,7 @@ myStartupHook :: X ()
 myStartupHook = do
   spawnOnce "dunst"
   spawnOnce "picom --experimental-backends"
-  spawnOnce "nitrogen --restore"
+  spawnOnce "feh --bg-scale ~/.config/wallpaper/0.png"
   spawnOnce "emacs --daemon"
   spawnOnce "~/.config/polybar/launch.sh"
   spawnOnce "greenclip daemon"

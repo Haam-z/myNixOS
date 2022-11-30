@@ -7,7 +7,6 @@
     feh
     haskellPackages.greenclip
     lxappearance
-    nitrogen
     pamixer
     picom
     polybar
