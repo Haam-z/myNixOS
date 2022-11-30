@@ -10,11 +10,11 @@
     target = "/home/haam/.doom.d/config.el";
   };
   home.file."emacs-packages" = {
-    source = ./packages;
+    source = ./packages.el;
     target = "/home/haam/.doom.d/packages.el";
   };
   home.file."emacs-custom" = {
-    source = ./custom;
+    source = ./custom.el;
     target = "/home/haam/.doom.d/custom.el";
 
   };
