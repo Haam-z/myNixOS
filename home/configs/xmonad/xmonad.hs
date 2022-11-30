@@ -85,13 +85,13 @@ myGameLauncher  :: String
 myGameLauncher  = "steam"
 
 myLauncher :: String
-myLauncher = "rofi -show drun -theme styles/tokyo-drun"
+myLauncher = "rofi -show drun "
 
 myClipBoard :: String
-myClipBoard = "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' -theme  styles/tokyo-clip"
+myClipBoard = "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' "
 
 myCMDLauncher :: String
-myCMDLauncher = "rofi -show run -theme styles/tokyo-run"
+myCMDLauncher = "rofi -show run -theme "
 
 
 myWorkspaces    = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
