@@ -11,7 +11,7 @@ index 1edb647..1d05a01 100644
  /* -fn option overrides fonts[0]; default X11 font or font set */
  static const char *fonts[] = {
 -	"monospace:size=10"
-+	"monospace:size=12"
++	"monospace:size=11"
  };
  static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
  static const char *colors[SchemeLast][2] = {
@@ -223,15 +223,7 @@ index 27b7a30..fcd81d1 100644
  	lines = MAX(lines, 0);
  	mh = (lines + 1) * bh;
  #ifdef XINERAMA
-@@ -714,7 +762,7 @@ setup(void)
- static void
- usage(void)
- {
--	die("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
-+	die("usage: dmenu [-bfiv] [-l lines] [-h height] [-p prompt] [-fn font] [-m monitor]\n"
- 	    "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]");
- }
- 
+
 @@ -733,14 +781,20 @@ main(int argc, char *argv[])
  			topbar = 0;
  		else if (!strcmp(argv[i], "-f"))   /* grabs keyboard before reading stdin */

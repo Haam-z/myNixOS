@@ -84,7 +84,7 @@ myCMDLauncher :: String
 myCMDLauncher = "dmenu_run"
 
 myLauncher :: String
-myLauncher = "j4-dmenu-desktop --dmenu='dmenu -h 24'"
+myLauncher = "j4-dmenu-desktop --dmenu='dmenu'"
 
 myClipBoard :: String
 myClipBoard = "clipmenu"
@@ -128,7 +128,6 @@ myKeys =
         [ ("M-t",                       spawn myTerminal )
         , ("M-f",                       spawn myFileManager)
         , ("M-e",                       spawn myEditor)
-        , ("M-S-e",                     spawn mySecondEditor)
         , ("M-b",                       spawn myBrowser)
         , ("M-S-b",                     spawn myPrivetBrowser)
         , ("M-d",                       spawn myLauncher )
