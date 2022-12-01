@@ -1,5 +1,4 @@
-{ config, lib, pkgs, ... }:
-
+{ config, lib, pkgs,... }:
 {
   home.packages = with pkgs; [
     dunst
@@ -10,6 +9,7 @@
     pamixer
     picom
     polybar
+    (dmenu.overrideAttrs (oldAttrs: rec {patches = [./dmenu/patch.diff ];}))
     rofi
     xdotool
   ];

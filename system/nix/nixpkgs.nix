@@ -1,7 +1,7 @@
-{ config, lib, pkgs, ... }:
-
+{ config, lib, pkgs, fetchFromGitHub , ... }:
 {
   nixpkgs = {
     config.allowUnfree = true;
-    system = "x86_64-linux";};
+    system = "x86_64-linux";
+  };
 }
