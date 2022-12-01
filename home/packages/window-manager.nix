@@ -10,6 +10,8 @@
     picom
     polybar
     (dmenu.overrideAttrs (oldAttrs: rec {patches = [./dmenu/patch.diff ];}))
+    clipmenu
+    j4-dmenu-desktop
     rofi
     xdotool
   ];

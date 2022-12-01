@@ -62,10 +62,6 @@ myPrivetBrowser = "tor-browser"    -- Sets default browser
 myEditor :: String
 myEditor  = "emacsclient -c -a 'emacs'"
 
-
-mySecondEditor :: String
-mySecondEditor = "neovide"
-
 myFileManager :: String
 myFileManager = "nemo"
 
@@ -84,15 +80,14 @@ myMusic = "spotify"
 myGameLauncher  :: String
 myGameLauncher  = "steam"
 
+myCMDLauncher :: String
+myCMDLauncher = "dmenu_run"
+
 myLauncher :: String
-myLauncher = "rofi -show drun "
+myLauncher = "j4-dmenu-desktop --dmenu='dmenu -h 24'"
 
 myClipBoard :: String
-myClipBoard = "rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}' "
-
-myCMDLauncher :: String
-myCMDLauncher = "rofi -show run -theme "
-
+myClipBoard = "clipmenu"
 
 myWorkspaces    = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 
@@ -192,7 +187,7 @@ myStartupHook = do
   spawnOnce "feh --bg-scale ~/.config/wallpaper/0.png"
   spawnOnce "emacs --daemon"
   spawnOnce "~/.config/polybar/launch.sh"
-  spawnOnce "greenclip daemon"
+  spawnOnce "clipmenud"
   spawnOnce "xsetroot -cursor_name left_ptr"
   spawnOnce "setxkbmap -model pc104 -layout us,ar -option grp:alt_shift_toggle"
 
