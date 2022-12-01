@@ -2,12 +2,9 @@
 
 {
   services.xserver.windowManager = {
-  	xmonad = {
-    		enable = true;
-    		enableContribAndExtras = true;
-    		extraPackages = hpkgs: [ hpkgs.xmonad hpkgs.xmonad-contrib hpkgs.xmonad-extras ]; };
-	awesome = {
-      		enable = true;
-		};
-	};
+    xmonad = {
+      enable = true;
+      enableContribAndExtras = true;
+      extraPackages = hpkgs: [ hpkgs.xmonad hpkgs.xmonad-contrib hpkgs.xmonad-extras ]; };
+  };
 }
