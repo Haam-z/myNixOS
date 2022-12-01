@@ -84,7 +84,7 @@ myCMDLauncher :: String
 myCMDLauncher = "dmenu_run"
 
 myLauncher :: String
-myLauncher = "j4-dmenu-desktop --dmenu='dmenu'"
+myLauncher = "j4-dmenu-desktop"
 
 myClipBoard :: String
 myClipBoard = "clipmenu"
