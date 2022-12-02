@@ -41,3 +41,4 @@
       :desc "Get me in ranger"
       "e" #'ranger)
 (setq display-line-numbers-type 'relative)
+(setq fancy-splash-image "./EmacsIcon.png")

@@ -127,10 +127,11 @@ myKeys :: [(String, X ())]
 myKeys =
         [ ("M-t",                       spawn myTerminal )
         , ("M-f",                       spawn myFileManager)
+        , ("M-S-f",                     spawn myTerminalFileManager )
         , ("M-e",                       spawn myEditor)
         , ("M-b",                       spawn myBrowser)
         , ("M-S-b",                     spawn myPrivetBrowser)
-        , ("M-d",                       spawn myLauncher )
+        , ("M-r",                       spawn myLauncher )
         , ("M-p",                       spawn myCMDLauncher )
         , ("M-S-d",                     spawn myClipBoard )
         , ("M-m",                       spawn myMailClinet)
