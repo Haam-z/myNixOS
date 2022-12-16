@@ -6,11 +6,8 @@
 (setq display-line-numbers-type t)
 (setq doom-font (font-spec :family "Fira Code Nerd Font" :size 18 :weight 'bold)
       doom-variable-pitch-font (font-spec :family "DejaVu Sans" :size 13))
-(add-hook 'org-mode-hook 'org-indent-mode)
-(setq org-directory "~/Org/"
-      org-agenda-files '("~/Org/agenda.org")
-      org-default-notes-file (expand-file-name "notes.org" org-directory)
-      org-ellipsis " ▼ "
+
+(add-hook-ellipsis " ▼ "
       org-log-done 'time
       org-journal-dir "~/Org/journal/"
       org-journal-date-format "%B %d, %Y (%A) "
@@ -33,8 +30,6 @@
 		(cl-return)))
   (setenv "SHELL" shell-file-name)
 
-(setq-default bidi-display-reordering 'left-to-right
-              bidi-paragraph-direction 'left-to-right)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-hook 'pdf-tools-enabled-hook 'pdf-view-midnight-minor-mode)
 (map! :leader

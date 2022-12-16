@@ -2,24 +2,23 @@ env:
   TERM: alacritty
 
 window:
+  opacity: 0.0
   padding:
     x: 10
     y: 10
-
     dynamic_padding:  true
     decoration: none
 
 font:
   normal:
-    family: monospace
+    family: FiraCode Nerd Font
   bold:
-    family: monospace
-
+    family: FiraCode Nerd Font
   italic:
-    family: monospace
+    family: FiraCode Nerd Font
 
   bold_italic:
-    family: monospace
+    family: FiraCode Nerd Font
 
   size: 10
 

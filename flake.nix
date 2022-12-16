@@ -11,14 +11,14 @@
     nixosConfigurations = {
       Nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        modules = [./system];
+      };
+    };
+    homeConfigurations = {
+      haam = inputs.home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages."x86_64-linux";
         modules = [
-          ./system
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.haam = import ./home;
-          }
+          ./home
         ];
       };
     };

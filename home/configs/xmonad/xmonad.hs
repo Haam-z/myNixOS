@@ -84,7 +84,7 @@ myCMDLauncher :: String
 myCMDLauncher = "dmenu_run"
 
 myLauncher :: String
-myLauncher = "j4-dmenu-desktop"
+myLauncher = "j4-dmenu-desktop --dmenu='dmenu'"
 
 myClipBoard :: String
 myClipBoard = "clipmenu"
@@ -131,7 +131,7 @@ myKeys =
         , ("M-e",                       spawn myEditor)
         , ("M-b",                       spawn myBrowser)
         , ("M-S-b",                     spawn myPrivetBrowser)
-        , ("M-r",                       spawn myLauncher )
+        , ("M-d",                       spawn myLauncher )
         , ("M-p",                       spawn myCMDLauncher )
         , ("M-S-d",                     spawn myClipBoard )
         , ("M-m",                       spawn myMailClinet)
@@ -186,7 +186,8 @@ myStartupHook = do
   spawnOnce "picom --experimental-backends"
   spawnOnce "feh --bg-scale ~/.config/wallpaper/0.png"
   spawnOnce "emacs --daemon"
-  spawnOnce "~/.config/polybar/launch.sh"
+  spawnOnce "eww --daemon"
+  spawnOnce "eww open bar"
   spawnOnce "clipmenud"
   spawnOnce "xsetroot -cursor_name left_ptr"
   spawnOnce "setxkbmap -model pc104 -layout us,ar -option grp:alt_shift_toggle"
@@ -198,7 +199,7 @@ defaults = def {
         , modMask            = myModMask
         , terminal           = myTerminal
         , startupHook        = myStartupHook >> addEWMHFullscreen
-        , layoutHook         = gaps [(L,2), (R,2), (U,31), (D,2)] $ spacingRaw True (Border 2 2 2 2) True (Border 2 2 2 2) True $ smartBorders $ myLayout
+        , layoutHook         = gaps [(L,2), (R,2), (U,37), (D,2)] $ spacingRaw True (Border 2 2 2 2) True (Border 2 2 2 2) True $ smartBorders $ myLayout
         , workspaces         = myWorkspaces
         , borderWidth        = myBorderWidth
         , normalBorderColor  = myNormColor
