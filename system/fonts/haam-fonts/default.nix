@@ -1,7 +1,7 @@
 { fetchzip, runCommand }:
 
 let src = fetchzip {
-  url = "https://github.com/Haam-z/fonts/archive/1b645c4f66ed6edb613cff0e5bb9533447e45e45.zip";
+  url = "https://github.com/Haam-z/fonts/archive/89eca28ef2805077299819140a28e0409444052d.zip";
   sha256 = "sha256-I3dpr5or1YdnN5Blgyra9Ehmff12bNyfT/a8nMjZY9E=";
 };
 in
