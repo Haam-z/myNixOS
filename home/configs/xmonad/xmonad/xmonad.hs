@@ -135,7 +135,7 @@ myKeys =
         , ("M-b",                       spawn myBrowser)
         , ("M-S-b",                     spawn myPrivetBrowser)
         , ("M-d",                       spawn myLauncher )
-        , ("M-S-n",                       spawn mySystemBuilder)
+        , ("M-S-u",                      spawn mySystemBuilder)
         , ("M-p",                       spawn myCMDLauncher )
         , ("M-S-d",                     spawn myClipBoard )
         , ("M-m",                       spawn myMailClinet)
@@ -162,8 +162,7 @@ myKeys =
         , ("M-l",                       sendMessage Expand)
         , ("M-,",                       sendMessage (IncMasterN 1))
         , ("M-.",                       sendMessage (IncMasterN (-1)))
-        , ("M-S-r",                     spawn "xmonad --restart")
-        , ("M-C-r",                     spawn "xmonad --recompile")
+        , ("M-S-r",                     spawn "xmonad --recompile;xmonad --restart")
         , ("M-M1-r",                    io exitSuccess)
         ]
 
