@@ -11,4 +11,5 @@
     };
     defaultUserShell = pkgs.fish;
   };
+  environment.systemPackages = [pkgs.git pkgs.home-manager];
 }

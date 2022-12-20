@@ -1,6 +1,5 @@
 { config, lib, pkgs, ... }:
 {
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) ["spotify" "spotify-unrapped"];
   home.packages = with pkgs; [
     ani-cli
     alacritty
@@ -11,7 +10,6 @@
     libreoffice-fresh
     mailspring
     pavucontrol
-    spotify
     tor-browser-bundle-bin
     virt-manager
     vlc

@@ -2,11 +2,9 @@
 
 {
   home.packages = with pkgs; [
-    bun
-    cargo
+    rustup
     cmake
-    deno
-    nodejs
-    python
+    cargo-binutils
+    gcc
   ];
 }
