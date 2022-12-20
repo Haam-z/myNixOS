@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 
 {
-  home.file.scripts = {
-    source = ./scripts ;
-    target = "/home/haam/.xmonad/scripts";
+  home.file.nixos_compil = {
+    source = ./scripts/nix-compil.sh;
+    target = "/home/haam/.xmonad/scripts/nixos-compil.sh";
   };
   home.file.xmoand = {
     source = ./xmonad.hs;
