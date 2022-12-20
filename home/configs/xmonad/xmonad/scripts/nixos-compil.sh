@@ -13,7 +13,8 @@ nixos_rebuild(){
 
 home_manager_rebuild(){
     flake_push
-     home-manager switch --flake github:Haam-z/myNixOS#haam
+    home-manager switch --flake github:Haam-z/myNixOS#haam
+    notify-send "hello"
 }
 chose_level(){
     sys_levl=$(printf "nixos\nhome-manager" | $DMENU)
