@@ -9,5 +9,4 @@
     source = ./xmonad/xmonad.hs;
     target = "/home/haam/.xmonad/xmonad.hs";
   };
-
 }
