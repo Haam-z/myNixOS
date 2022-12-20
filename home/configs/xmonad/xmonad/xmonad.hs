@@ -84,7 +84,7 @@ myCMDLauncher :: String
 myCMDLauncher = "dmenu_run"
 
 mySystemBuilder :: String
-mySystemBuilder = "/home/haam/.xmonad/nixos-compil.sh"
+mySystemBuilder = "/home/haam/.xmonad/nixos-compile"
 
 myLauncher :: String
 myLauncher = "j4-dmenu-desktop --dmenu='dmenu'"
