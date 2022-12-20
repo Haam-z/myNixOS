@@ -135,7 +135,7 @@ myKeys =
         , ("M-b",                       spawn myBrowser)
         , ("M-S-b",                     spawn myPrivetBrowser)
         , ("M-d",                       spawn myLauncher )
-        , ("M-S-u",                      spawn mySystemBuilder)
+        , ("M-S-u",                     spawn mySystemBuilder)
         , ("M-p",                       spawn myCMDLauncher )
         , ("M-S-d",                     spawn myClipBoard )
         , ("M-m",                       spawn myMailClinet)
