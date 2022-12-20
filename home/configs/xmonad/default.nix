@@ -2,7 +2,7 @@
 
 {
   home.file.nixos_compil = {
-    source = ./scripts/nix-compil.sh;
+    source = ./nix-compil.sh;
     target = "/home/haam/.xmonad/scripts/nixos-compil.sh";
   };
   home.file.xmoand = {
