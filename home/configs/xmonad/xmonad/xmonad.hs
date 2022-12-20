@@ -83,6 +83,9 @@ myGameLauncher  = "steam"
 myCMDLauncher :: String
 myCMDLauncher = "dmenu_run"
 
+mySystemBuilder :: String
+mySystemBuilder = "./scripts/nixos-compile.sh"
+
 myLauncher :: String
 myLauncher = "j4-dmenu-desktop --dmenu='dmenu'"
 
@@ -132,6 +135,7 @@ myKeys =
         , ("M-b",                       spawn myBrowser)
         , ("M-S-b",                     spawn myPrivetBrowser)
         , ("M-d",                       spawn myLauncher )
+        , ("M-s-c",                     spawn mySystemBuilder)
         , ("M-p",                       spawn myCMDLauncher )
         , ("M-S-d",                     spawn myClipBoard )
         , ("M-m",                       spawn myMailClinet)

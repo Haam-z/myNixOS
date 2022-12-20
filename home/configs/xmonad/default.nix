@@ -2,7 +2,8 @@
 
 {
   home.file.xmonad = {
-    source = ./xmonad.hs ;
-    target = "/home/haam/.xmonad/xmonad.hs";
+    source = ./xmonad ;
+    target = "/home/haam/.xmonad";
   };
+
 }
