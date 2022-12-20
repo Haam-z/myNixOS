@@ -9,6 +9,7 @@ flake_push(){
 nixos_rebuild(){
     flake_push
     SUDO_ASKPASS=$HOME/dpass sudo -A nixos-rebuild switch --flake github:Haam-z/myNixOS#Nixos
+    notify-send "nixos Hade been Rebuild"
 }
 
 home_manager_rebuild(){
