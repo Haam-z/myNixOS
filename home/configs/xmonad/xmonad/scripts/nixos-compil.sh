@@ -14,7 +14,7 @@ nixos_rebuild(){
 home_manager_rebuild(){
     flake_push
     home-manager switch --flake github:Haam-z/myNixOS#haam
-    notify-send "hello"
+    notify-send "Home-manager Hade been Rebuild"
 }
 chose_level(){
     sys_levl=$(printf "nixos\nhome-manager" | $DMENU)
