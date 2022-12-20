@@ -84,7 +84,7 @@ myCMDLauncher :: String
 myCMDLauncher = "dmenu_run"
 
 mySystemBuilder :: String
-mySystemBuilder = "./scripts/nixos-compile.sh"
+mySystemBuilder = "/home/haam/.xmonad/scripts/nixos-compil.sh"
 
 myLauncher :: String
 myLauncher = "j4-dmenu-desktop --dmenu='dmenu'"
@@ -135,7 +135,7 @@ myKeys =
         , ("M-b",                       spawn myBrowser)
         , ("M-S-b",                     spawn myPrivetBrowser)
         , ("M-d",                       spawn myLauncher )
-        , ("M-s-c",                     spawn mySystemBuilder)
+        , ("M-S-c",                     spawn mySystemBuilder)
         , ("M-p",                       spawn myCMDLauncher )
         , ("M-S-d",                     spawn myClipBoard )
         , ("M-m",                       spawn myMailClinet)

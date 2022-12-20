@@ -1,9 +1,13 @@
 { config, lib, pkgs, ... }:
 
 {
-  home.file.xmonad = {
-    source = ./xmonad ;
-    target = "/home/haam/.xmonad";
+  home.file.scripts = {
+    source = ./xmonad/scripts ;
+    target = "/home/haam/.xmonad/scripts";
+  };
+  home.file.xmoand = {
+    source = ./xmonad/xmonad.hs;
+    target = "/home/haam/.xmonad/xmonad.hs";
   };
 
 }
